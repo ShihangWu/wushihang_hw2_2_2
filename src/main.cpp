@@ -17,11 +17,11 @@ void loop() {
     if (input == expected[currentStep]) {
       currentStep++; // 进入下一步
       if (currentStep >= 4) { // 所有步骤均正确
-        Serial.println("密码正确");
+        Serial.println("The code is right");
         currentStep = 0; // 重置步骤
       }
     } else {
-      Serial.println("密码错误");
+      Serial.println("The code is wrong");
       currentStep = 0; // 重置步骤
     }
   }
